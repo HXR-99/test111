@@ -1,5 +1,5 @@
 from flask import Flask, request
-
+print("hello")
 app = Flask(__name__)
 
 @app.route("/tebex-webhook", methods=["POST"])
@@ -10,3 +10,4 @@ def tebex_webhook():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
+
